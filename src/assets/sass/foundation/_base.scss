@@ -1,0 +1,26 @@
+@use "../global" as variables;
+
+body {
+  color: variables.$text-color;
+  font-family: variables.$ff-base;
+  font-size: variables.$fz-base;
+  font-weight: variables.$fw-base;
+  line-height:variables.$lh-base;
+
+	&.is-footer-sns-fixed {
+		padding-bottom: 75px;
+
+    @include variables.mq("sp") {
+      padding-bottom: 67px;
+    }
+	}
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}

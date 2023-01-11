@@ -1,0 +1,35 @@
+@use "../global/" as variables;
+.btn{
+    display: inline-block;
+    padding: 14px 34px;
+    color:variables.$link-color;
+    background-color: variables.$text-color;
+    width: 130px;
+    max-width: 100%;
+    border-radius: 4px 4px;
+}
+
+.c-contact__btn{
+    
+}
+
+.c-contact__header-btn{
+    margin-left: 65px;
+ }
+
+.c-contact__footer-btn{
+    font-size: 20px;
+    max-width: 220px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20.5px 34px;
+
+
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        font-size: 16px;
+       }
+}

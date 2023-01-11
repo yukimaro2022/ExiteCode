@@ -1,0 +1,42 @@
+@use "../global/" as variables;
+
+.p-section__service{
+    margin-top: 100px;
+    padding: 110px 0;
+    background: #F7F7EE;
+
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        margin-top: 110px;
+    }
+}
+
+.p-service__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        display: block;
+    }
+  }
+
+
+.p-service__item{
+   
+    width:calc(33% - 35px * 2 / 3);
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        margin: 50px auto 0;
+        width: 100%;
+        text-align: center;
+    }
+   
+}
+
+
+
+.p-service__info{
+    margin-top: 25px;
+    text-align: center;
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+       margin-top: 20px;
+    }
+}

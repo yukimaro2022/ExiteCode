@@ -1,0 +1,24 @@
+@use "../global/" as variables;
+
+.p-footer{
+    height: 80px;
+    background-color:variables.$footer-color;
+    position: relative;
+
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        height: 60px;
+    }
+}
+.footer__inner{
+
+}
+
+.footer__copy{
+    color:variables.$link-color;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}

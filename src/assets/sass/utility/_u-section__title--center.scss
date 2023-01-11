@@ -1,0 +1,9 @@
+@use "../global/" as variables;
+
+.u-section__title--center{
+    text-align: center;
+
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        text-align: left;
+    }
+}

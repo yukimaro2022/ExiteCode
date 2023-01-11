@@ -1,0 +1,9 @@
+@use "../global" as variables;
+
+.u-border__center{
+    margin: 16px auto 0;
+
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        margin-left:0 ;
+    }
+}

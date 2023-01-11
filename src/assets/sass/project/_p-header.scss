@@ -1,0 +1,47 @@
+@use "../global/" as variables;
+
+.p-header{
+    width: 100%;
+    height: 74px;
+}
+.l-header__inner{
+    max-width: 1440px;
+    padding: 0 8.33vw;
+    background-color:#F7F7EE;
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    margin-inline: auto;
+    display: flex;
+    height: inherit;
+    align-items: center;
+
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        padding: 0 15px;
+    }
+}
+.p-header__logo{
+    font-size: 24px;
+    font-family: variables.$ff-en;
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        font-size: 22px;
+    }
+    
+}
+
+.p-global__nav{
+    margin-left: auto;
+
+}
+
+.p-global__list{
+    display: flex;
+}
+
+.p-global__item{
+    font-family: variables.$ff-en;
+    &:not(:first-child){
+        margin-left: 65px;
+    }
+    
+}

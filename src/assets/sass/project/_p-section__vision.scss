@@ -1,0 +1,30 @@
+@use "../global/" as variables;
+
+
+
+.p-section__inner{
+    max-width: 1030px;
+    width: 92%;
+    margin-inline: auto;
+
+}
+
+.p-section__textarea{
+    margin-top: 50px;
+    line-height: (44 / 24);
+}
+
+.p-extarea__title{
+   margin-top: 24px;
+   font-size: 24px;
+   line-height: (30 / 16);
+   letter-spacing: .05em;
+   @media screen and (max-width: #{variables.$sp-width - 1px}){
+    font-size: 20px;
+   }
+}
+
+.p-textarea__text{
+    margin-top: 16px;
+    letter-spacing: .05em;
+}

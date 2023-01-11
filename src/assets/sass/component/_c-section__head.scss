@@ -1,0 +1,11 @@
+@use "../global/" as variables;
+
+.c-section__head{
+    
+}
+
+.c-section__title{
+    font-size: 36px;
+    position: relative;
+    font-family: variables.$ff-en;
+}

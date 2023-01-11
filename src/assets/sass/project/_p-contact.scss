@@ -1,0 +1,21 @@
+@use "../global/" as variables;
+
+.p-contact{
+    margin-top: 100px;
+    height: 340px;
+    width:100%;
+    position: relative;
+    background-image: url("/public/assets/img/BG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @media screen and (max-width: #{variables.$sp-width - 1px}){
+        margin-top: 110px;
+
+    }
+}
+
+
+
